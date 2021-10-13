@@ -31,12 +31,13 @@ header {
     list-style-type: none;
     display: inline-block;
     float: left;
-    padding-left: 25px;
+    padding-left: 20px;
     padding-right: 25px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
     line-height: 100px;
     text-transform: uppercase;
     font-size: 14px;
+    height: 100px;
 }
 .main-menu ul li a {
     text-decoration: none;
@@ -58,6 +59,7 @@ main {
     padding: 3em 6em 3em 5.5em;
     margin: 2em 0;
     font-family:Arial, Helvetica, sans-serif;
+    width: 90%;
 }
 main h1 {
     font-size: 2.5em;
@@ -67,14 +69,25 @@ main h1 {
 main h2 {
     font-size: 1.7em;
 }
+main div.text{
+    display: grid;
+    grid-column-gap:20px;
+    grid-template-columns: repeat(2,1fr);
+}
+main div.content{
+    border: 1px solid #888;
+    width:100%;
+    
+}
 
 /* Partners */
 section {
     width: 100%;
     background-color: #4288C3;
+
 }
-section #partners {  
-    width: 1200px;
+section #partners{  
+    width: 100%;
     padding: 2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
@@ -85,6 +98,7 @@ section #partners .partner {
     padding: 1.3em 1.5em;
     background-color: #fff;
     border-radius: 50%;
+    width:auto;
 }
 section #partners .partner img {
     width: 90px;
@@ -150,7 +164,7 @@ footer #nondisclaimer .social .fa-instagram {
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
 /* Media Queries */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     footer #nondisclaimer .copy {
         padding: 3.5em 0em 3.5em 0em;
         text-align: center;
@@ -169,15 +183,18 @@ footer #nondisclaimer .social .fa-instagram {
     .logo img {
         position: relative;
         bottom: 8px;
+        
     }
     .main-menu {
         width: 200px;
-        background-color:rgb(255, 255, 255);
         position: absolute;
         right: 1.7em;
+        margin-top:25px;
+    
       }
       .main-menu ul li {
         border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+        background-color:rgb(255, 255, 255);
       }
       main {
         padding: 3em 1em 3em 1em;
@@ -188,4 +205,5 @@ footer #nondisclaimer .social .fa-instagram {
         min-height: 450px;
         margin-top: 1em;
       }
-} */
+      
+} 
